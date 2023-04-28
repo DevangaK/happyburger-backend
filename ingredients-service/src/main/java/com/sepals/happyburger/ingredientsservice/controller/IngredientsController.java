@@ -8,33 +8,40 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+//REST APIs for logics in IngredientService
+
 @RestController
 //@RequestMapping("/ingredient")
 @RequiredArgsConstructor
 public class IngredientsController {
 
-    @Autowired
+    @Autowired //Autowired -> handle all dependency injections
     private final IngredientService ingredientService;
 
-    //GET API
+    //GET APIs for all GET Methods in IngredientService
+    //display all the ingredients in the DB
     @GetMapping("/ingredients")
     public List<Ingredient> showAllIngredients(){
         return ingredientService.getIngredients();
     }
 
+    //display a specific ingredient filtered by the ingredient id
     @GetMapping("ingredients/{id}")
     public Ingredient getIngredientById(@PathVariable long id) {
         return ingredientService.getIngredientById(id);
     }
 
 
-    //POST API
-    @PostMapping("ingredients/addAll")
+    //POST APIs for all POST Methods in IngredientService
+    //save all the ingredients to the DB
+    @PostMapping("ingredients/saveAll")
     public List<Ingredient> addIngredients(@RequestBody List<Ingredient> ingredients){
         return ingredientService.saveIngredients(ingredients);
+        //RequestBody -> send ingredient details through JSON, so we can use Insomnia/Postman to test the API
     }
 
-    @PostMapping("ingredients/addOne")
+    //save a specific ingredient to the DB
+    @PostMapping("ingredients/saveIngredient")
     public Ingredient addIngredient(@RequestBody Ingredient ingredient) {
         return ingredientService.saveIngredient(ingredient);
     }
