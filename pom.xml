@@ -20,6 +20,7 @@
     <modules>
         <module>ingredients-service</module>
         <module>cart-service</module>
+        <module>feedback-service</module>
     </modules>
 
     <properties>
