@@ -21,7 +21,6 @@
         <module>ingredients-service</module>
         <module>cart-service</module>
         <module>feedback-service</module>
-        <module>catelog-service</module>
     </modules>
 
     <properties>
