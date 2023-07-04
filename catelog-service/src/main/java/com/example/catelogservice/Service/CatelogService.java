@@ -1,7 +1,7 @@
 package com.example.catelogservice.Service;
 
-import CatelogService.Model.CatelogModel;
-import CatelogService.Repository.CatelogRepository;
+import com.example.catelogservice.Model.CatelogModel;
+import com.example.catelogservice.Repository.CatelogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

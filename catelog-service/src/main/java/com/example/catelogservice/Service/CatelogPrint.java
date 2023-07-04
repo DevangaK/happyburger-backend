@@ -1,6 +1,6 @@
 package com.example.catelogservice.Service;
 
-import CatelogService.Model.CatelogModel;
+import com.example.catelogservice.Model.CatelogModel;
 
 public interface CatelogPrint {
     public CatelogModel addProduct(CatelogModel catelog);

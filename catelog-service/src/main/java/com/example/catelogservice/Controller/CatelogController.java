@@ -1,7 +1,7 @@
 package com.example.catelogservice.Controller;
 
-import CatelogService.Model.CatelogModel;
-import CatelogService.Service.CatelogService;
+import com.example.catelogservice.Model.CatelogModel;
+import com.example.catelogservice.Service.CatelogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
