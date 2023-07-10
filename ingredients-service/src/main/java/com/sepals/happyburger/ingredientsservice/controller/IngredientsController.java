@@ -11,8 +11,8 @@ import java.util.List;
 //REST APIs for logics in IngredientService
 
 @RestController
-//@RequestMapping("/ingredient")
 @RequiredArgsConstructor
+@CrossOrigin //connect two applications spring boot and react
 public class IngredientsController {
 
     @Autowired //Autowired -> handle all dependency injections
